@@ -1,8 +1,8 @@
 # loading image data
-load('ex3data1.mat');
+load('image_data.mat');
 m = size(X, 1);
 rp = randperm(m);
-
+load('weights.mat');
 for i = 1:m
     % Display image
     displayData(X(rp(i), :));
